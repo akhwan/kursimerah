@@ -1,0 +1,4 @@
+{
+"javascript.suggest.alwaysAllWords" true
+"javascript.suggest.useCodeSnippetsOnMethodSuggest" true
+}
