@@ -82,12 +82,14 @@ header{
 	color: #ffffff;
 	padding-top: 80px;
 	padding-bottom: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .logo{
 	position: absolute;
-	left: 50%;
-	margin-left: -50px;
 	top: -80px;
 	background: #f7f7f7;
 	width: 80px;
@@ -124,6 +126,7 @@ header button{
 	margin-bottom: 20px;
 	box-shadow: 0 9px 8px -6px #252525;
 	transition: .3s;
+	outline: none;
 }
 
 section h2{
@@ -154,6 +157,14 @@ section h2{
 #service ul li{
 	letter-spacing: 2px;
 	margin: 100px 0;
+}
+
+.service-list{
+	color: white;
+}
+
+.service-list-active{
+	border-bottom: 1px solid #fff;
 }
 
 .service-frame-image{
@@ -339,6 +350,8 @@ input[type="submit"]:hover{
 	}
 
 	#contact{
+		padding-top: 450px;
+		padding-bottom: 350px;
 		margin: auto;
 		display: flex;
 		justify-content: center;

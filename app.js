@@ -28,3 +28,17 @@ var links = document.querySelector('.scroll');
 links.addEventListener('click', function(){
     smoothScroll('#service',1000);
 });
+
+function serviceSelect() {
+    const list = document.querySelectorAll(".service-hero li");
+    const preview = document.querySelector(".service-frame-image img");
+
+    lists.forEach(list => {
+        list.addEventListener("click", function(){
+            const imgPreview = list.src;
+            
+        });
+    });
+}
+
+serviceSelect();
