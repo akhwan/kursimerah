@@ -29,16 +29,19 @@ links.addEventListener('click', function(){
     smoothScroll('#service',1000);
 });
 
-function serviceSelect() {
-    const list = document.querySelectorAll(".service-hero li");
-    const preview = document.querySelector(".service-frame-image img");
+//end of SmoothScroll
 
-    lists.forEach(list => {
-        list.addEventListener("click", function(){
-            const imgPreview = list.src;
-            
-        });
-    });
+//Auto hide navbar
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+    var currentScrollpos = window.pageYOffset;
+    if(prevScrollpos > currentScrollpos) {
+        document.getElementById('navbar').style.display = "flex";
+    } else {
+        document.getElementById('navbar').style.display = "none";
+    }
+
+    prevScrollpos = currentScrollpos;
+
 }
-
-serviceSelect();

@@ -29,14 +29,15 @@
 		<h2>what we do</h2>
 			<div class="service-hero">
 			<ul>
-				<li><a href="#" class="service-list service-list-active">SOFTWARE</a></li>
-				<li><a href="#" class="service-list">NETWORKING</a></li>
-				<li><a href="#" class="service-list">ARTWORK</a></li>
+				<li><a onclick="document.getElementById('image-preview').src='img/service-software.jpg'" class="service-list service-list-active">SOFTWARE</a></li>
+				<li><a onclick="document.getElementById('image-preview').src='img/service-network.jpg'" class="service-list">NETWORKING</a></li>
+				<li><a onclick="document.getElementById('image-preview').src='img/service-artwork.jpg'" class="service-list">ARTWORK</a></li>
 			</ul>
 			<div class="service-frame">	
 				<div class="service-frame-image">
-					<img src="img/service-software.jpg" alt="service-sofware">
-					<div class="service-detail"><p class="service-detail-text">we create software & website with lattest trend</p></div>
+					<img id='image-preview' src="img/service-software.jpg" alt="service-sofware">
+					<div class="service-detail"><p class="service-detail-text">we create software & website with lattest trend</p>
+					</div>
 				</div>
 			</div>
 		</div>
