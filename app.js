@@ -26,7 +26,7 @@ function smoothScroll(target, duration){
 var links = document.querySelector('.scroll');
 
 links.addEventListener('click', function(){
-    smoothScroll('#service',1000);
+    smoothScroll('#service',2700);
 });
 
 //end of SmoothScroll
@@ -44,4 +44,18 @@ window.onscroll = function() {
 
     prevScrollpos = currentScrollpos;
 
+}
+
+//select service
+function selectService(indexImage) {
+    var imagePath = 'img/' + indexImage + '.jpg';
+    
+    var caption = document.querySelector('.service-detail-text');
+    var textCaption = ['we create software & website with lattest trend',
+                   'we help you to build your networking system',
+                   'we transform your business to design graphic with lattest trend'];
+    
+                   caption.innerHTML = textCaption[indexImage];  
+                   document.getElementById('image-preview').src = imagePath;
+                   return false;
 }
